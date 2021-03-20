@@ -45,4 +45,37 @@ body {
 
 li::marker {
     color: #fbff00;
+    content: ">";
 }
+
+a {
+    color: white;
+}
+
+/* contact form */
+#name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+#emailinsta {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+#message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+#submitButton {
+    background-color: #fbff00;
+    border: none;
+    color: #232323;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+/* contact form ends */
