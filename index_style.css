@@ -1,0 +1,23 @@
+#titleHeading {
+    font-size: 3.5rem;
+    color: black;
+}
+
+#logo {
+    width: 10em;
+    border-radius: 50%;
+}
+
+.accordion-button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+}
+
+.accordion-body {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+}
+
+.accordion {
+    width: 45em;
+}
