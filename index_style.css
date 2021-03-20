@@ -1,3 +1,7 @@
+body {
+    background-color: #232323;
+}
+
 #titleHeading {
     font-size: 3.5rem;
     color: black;
@@ -5,19 +9,40 @@
 
 #logo {
     width: 10em;
-    border-radius: 50%;
 }
 
-.accordion-button {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.4rem;
-}
-
-.accordion-body {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.2rem;
-}
-
+/* accordion */
 .accordion {
-    width: 45em;
+    background-color: #232323;
+    color: #fbff00;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #fbff00;
+    color: #232323;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #232323;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.2rem;
+  }
+/* accordion ends */
+
+li::marker {
+    color: #fbff00;
 }
