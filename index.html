@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="index_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    <title>Kalaamanch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <title>Kalaamanch</title>
 </head>
 <body>
 
     <center>
     <!-- logo -->
-    <img src="logo.png" alt="logo" id="logo">
+    <img src="logo1.png" alt="logo" id="logo">
     
     <br><br>
 
@@ -39,14 +40,84 @@
     </div>
     <button class="accordion">What Events we organize?</button>
     <div class="panel">
+      <p>Click on the Event Names to know more about them!</p>
+      <div>
+        <li id="eventsList">  
+          <button class="myBtn">SKETCHATHON</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>SKETCHATHON</h2>
+              </div>
+              <div class="modal-body">
+                <p>Tinkle Didi OP</p>
+              </div>
+              <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div> -->
+            </div>
+
+          </div>
+        </li>
+        <li id="eventsList">
+          <button class="myBtn">SKETCH BATTLE</button>
+
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>SKETCH BATTLE</h2>
+              </div>
+              <div class="modal-body">
+                <p>Tinkle Didi OP</p>
+              </div>
+              <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div> -->
+            </div>
+
+          </div>
+        </li>
+        <li id="eventsList"> 
+          <button class="myBtn">WEEKLY CONTESTS</button>
+
+          <!-- The Modal -->
+          <div id="myModal3" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>WEEKLY CONTESTS</h2>
+              </div>
+              <div class="modal-body">
+                <p>Tinkle Didi OP</p>
+              </div>
+              <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div> -->
+            </div>
+
+          </div>
+        </li>
+      </div>
+    </div>
+    <button class="accordion">What our Sponsors think about us?</button>
+    <div class="panel">
       <p>
-        <li>Sketchathon</li>
-        <li>Sketch Battle</li>
-        <li>Insta-Art</li>
+        Tinkle Didi Likh Dengi
       </p>
     </div>
     <button class="accordion">Get In Touch</button>
-    <div class="panel">
+    <div class="panel" id="contact">
       <p>
         <center>
         <form name="contact" id="contact" netlify data-netlify-recaptcha="true">
@@ -71,12 +142,14 @@
         <label for="insta"></label> 
         <img id="insta" src="insta.png" alt="" style="width: 2em;">
         <br><br>
-        <a href="mailto:contact.kalaamanch@gmail.com">Write an Email!</a>
+        <a id="emailContact" href="mailto:contact.kalaamanch@gmail.com">Write an Email!</a>
         <br>
       </p>
     </div>
 
     </center>
+
+
 <script src="index.js"></script>
 </body>
 </html>
