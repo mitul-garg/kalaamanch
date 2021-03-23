@@ -56,3 +56,28 @@ window.onclick = function(event) {
 }
 
 // modal ends
+
+// typing effect
+var left = "KALAA"
+var right = "MANCH"
+var leftName = document.getElementById('leftName')
+var rightName = document.getElementById('rightName')
+var i = 0;
+function printName() {
+  setTimeout(function(){
+    leftName.innerHTML += left[i] + " <br> "
+    rightName.innerHTML += right[i] + " <br> "
+    i++;
+    if (i<=5) {
+      printName()
+    }
+    else {
+      leftName.innerHTML = ""
+      rightName.innerHTML = ""
+      i = 0
+      printName()
+    }
+  }, 1000)
+}
+printName();
+console.log(document.getElementsByClassName('events'))
