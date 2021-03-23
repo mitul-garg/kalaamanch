@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #232323;
 }
 
 
@@ -9,15 +9,13 @@ body {
     color: black;
 }
 
-#logo {
-    width: 8em;
-}
+
 
 /* accordion */
 .accordion {
-    background-color: #000000;
+    background-color: #232323;
     /* color: #fbff00; */
-    color: #50a870;
+    color: #fbff00;
     cursor: pointer;
     padding: 18px;
     width: 60%;
@@ -30,13 +28,13 @@ body {
   }
   
   .active, .accordion:hover {
-    background-color: #50a870;
-    color: #000000;
+    background-color: #fbff00;
+    color: #232323;
   }
   
   .panel {
     padding: 0 18px;
-    background-color: #000000;
+    background-color: #232323;
     color: white;
     font-family: 'Bebas Neue', cursive;
     max-height: 0;
@@ -47,7 +45,7 @@ body {
 /* accordion ends */
 
 #eventsList::marker {
-    color: #50a870;
+    color: #fbff00;
     content: ">";
 }
 
@@ -69,9 +67,9 @@ body {
     font-size: 0.8em;
 }
 #submitButton {
-    background-color: #50a870;
+    background-color: #fbff00;
     border: none;
-    color: #000000;
+    color: #232323;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -101,7 +99,7 @@ body {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #000000;
+  background-color: #232323;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -126,7 +124,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: #232323;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -141,21 +139,21 @@ body {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #50a870;
-  color: #000000;
+  background-color: #fbff00;
+  color: #232323;
 }
 
 .modal-body {padding: 2px 16px;}
 
 /* .modal-footer {
   padding: 2px 16px;
-  background-color: #50a870;
-  color: #000000;
+  background-color: #fbff00;
+  color: #232323;
 } */
 .myBtn {
   background-color: transparent;
   border: none;
-  color: #50a870;
+  color: #fbff00;
   padding: 10px 24px;
   text-align: center;
   text-decoration: none;
@@ -181,7 +179,7 @@ body {
   float: left;
   padding-left: 5%;
   padding-top: 5%;
-  font-size: 2rem;
+  font-size: 3rem;
 
 }
 #rightName {
@@ -190,6 +188,23 @@ body {
   float: right;
   padding-right: 5%;
   padding-top: 5%;
-  font-size: 2rem;
+  font-size: 3rem;
 
+}
+
+/* footer */
+#logo {
+  width: 3em;
+}
+#copyright {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+#footer {
+  /* position: fixed; */
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #161616;
+  text-align: center;
 }
