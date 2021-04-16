@@ -4,12 +4,14 @@ body {
 
 /* news line */
 .scroll-left {
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
  height: 50px;	
  overflow: hidden;
  position: relative;
  background: #fbff00;
  color: #232323;
- border: 1px solid orange;
+ border: 1px solid white;
 }
 .scroll-left p {
  position: absolute;
@@ -102,7 +104,8 @@ body {
     padding: 0 18px;
     background-color: #232323;
     color: white;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Antonio', sans-serif;
+    font-weight: bold;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -207,9 +210,13 @@ body {
   padding: 2px 16px;
   background-color: #fbff00;
   color: #232323;
+
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px;
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
+  }
 
 /* .modal-footer {
   padding: 2px 16px;
