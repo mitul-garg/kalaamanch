@@ -27,18 +27,43 @@
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Events');
         data.addColumn('number', 'Participants');
+        data.addColumn({ type: 'string', role: 'style' })
         data.addRows([
-          ['Sketchathon 1.0', 51],
-          ['Sketchathon 2.0', 23],
-          ['Sketch Battle', 30],
-          ['SnapDraw', 40],
-          ['Sketchathon 3.0', 57]
+          ['Sketchathon 1.0', 51, '#fbff00'],
+          ['Sketchathon 2.0', 23, '#fbff00'],
+          ['Sketch Battle', 30, '#fbff00'],
+          ['SnapDraw', 40, '#fbff00'],
+          ['Sketchathon 3.0', 57, '#fbff00']
         ]);
 
         // Set chart options
         var optionsParticipants = {'title':'Number Of Participants',
                        'width':300,
                        'height':300,
+                        backgroundColor: '#232323',
+                        colors: ['#fbff00'],
+                        hAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                        vAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                          titleTextStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
                       };
 
         // Instantiate and draw our chart, passing in some options.
@@ -60,6 +85,30 @@
         var votes = {'title':'Number Of Votes',
                       'width':300,
                       'height':300,
+                      backgroundColor: '#232323',
+                        colors: ['#fbff00'],
+                        hAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                        vAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                          titleTextStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
                       };
         var chart = new google.visualization.ColumnChart(document.getElementById('votes'));
         chart.draw(data, votes);
@@ -78,6 +127,30 @@
         var visits = {'title':'Number Of Visits (Website was used in the last two Contests only)',
                       'width':300,
                       'height':300,
+                      backgroundColor: '#232323',
+                        colors: ['#fbff00'],
+                        hAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                        vAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                          titleTextStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
                       };
         var chart = new google.visualization.ColumnChart(document.getElementById('website_visits'));
         chart.draw(data, visits);
@@ -96,6 +169,30 @@
         var reach = {'title':'Number Of Accounts Reached (Average Post Reach)',
                       'width':300,
                       'height':300,
+                      backgroundColor: '#232323',
+                        colors: ['#fbff00'],
+                        hAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                        vAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                          titleTextStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
                       };
         var chart = new google.visualization.ColumnChart(document.getElementById('instagram_reach'));
         chart.draw(data, reach);
@@ -114,6 +211,30 @@
         var prizes = {'title':'Prizes Worth',
                       'width':300,
                       'height':300,
+                      backgroundColor: '#232323',
+                        colors: ['#fbff00'],
+                        hAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                        vAxis: {
+                          textStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
+                          gridlines: {
+                            color: "white",
+                          }
+                        },
+                          titleTextStyle: {
+                            color: "white",
+                            bold: "true",
+                          },
                       };
         var chart = new google.visualization.ColumnChart(document.getElementById('prizes_worth'));
         chart.draw(data, prizes);
@@ -135,6 +256,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <title>Kalaamanch</title>
 </head>
 <body>
@@ -144,6 +267,8 @@
         <!-- <a href="https://www.youtube.com">Click Me!</a> -->
     </p>
   </div>
+
+    <h1 id="title">@kalaamanch_sgsits</h1>
 
     <!-- vertical naming starts -->
     <div id="leftName">
@@ -169,13 +294,13 @@
     <button class="accordion w3-animate-right">What we do?</button>
     <div class="panel">
       <p>
-        We try to promote and showcase <br> the artworks of hidden artists <br> through our Instagram page <br> <a href="https://www.instagram.com/engg_sketches">@kalaamanch</a>
+        We try to promote and showcase <br> the artworks of hidden artists <br> through our Instagram page <br> <a href="https://www.instagram.com/kalaamanch_sgsits">@kalaamanch_sgsits</a>
       </p>
     </div>
     <button class="accordion w3-animate-left">How it works?</button>
     <div class="panel">
       <p>
-       DM us your Artwork on Instagram : <br> <a href="https://www.instagram.com/engg_sketches">@kalaamanch</a>
+       DM us your Artwork on Instagram : <br> <a href="https://www.instagram.com/kalaamanch_sgsits">@kalaamanch_sgsits</a>
         <br>
         We will post it on our page asap! 
       </p>
@@ -304,8 +429,10 @@
         </form>
         </center>
         <br>
-        <label for="insta">DM us on Instagram</label>
-        <a href="https://www.instagram.com"><img id="insta" src="insta.png" alt="" style="width: 2em;"></a>
+        <a href="https://www.instagram.com/kalaamanch_sgsits"><img id="insta" src="insta.png" alt="" style="width: 2em;"></a>
+        <a href="https://www.instagram.com/kalaamanch_sgsits"><img id="insta" src="linkedin.png" alt="" style="width: 2em;"></a>
+        <a href="https://www.instagram.com/kalaamanch_sgsits"><img id="insta" src="twitter.png" alt="" style="width: 2em;"></a>
+
         <br><br>
         <a id="emailContact" href="mailto:contact.kalaamanch@gmail.com">Write an Email!</a>
         <br>
@@ -320,7 +447,10 @@
       <img src="logo1.png" alt="logo" id="logo" class="w3-animate-zoom">
       <br>
       <p id="copyright">&copy;Copyright 2021 KalaaManch </p>
-      <a href="https://www.instagram.com"><img id="insta" src="insta.png" alt="" style="width: 2em;"></a>
+      <a href="https://www.instagram.com/kalaamanch_sgsits"><img id="insta" src="insta1.png" alt="" style="width: 2em;"></a>
+      <a href="https://www.instagram.com/kalaamanch_sgsits"><img id="insta" src="linkedin1.png" alt="" style="width: 2em;"></a>
+      <a href="https://www.instagram.com/kalaamanch_sgsits"><img id="insta" src="twitter1.png" alt="" style="width: 2em;"></a>
+
       <br>
       <br>
     </center>
