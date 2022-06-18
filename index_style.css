@@ -1,62 +1,70 @@
 body {
-    background-color: #232323;
+  background-color: #232323;
 }
 
 #title {
   color: #fbff00;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-align: center;
 }
 
 /* news line */
 .scroll-left {
-  font-family: 'Patrick Hand', cursive;
- height: 50px;	
- overflow: hidden;
- position: relative;
- background: #fbff00;
- color: #232323;
- border: 1px solid white;
+  font-family: "Patrick Hand", cursive;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: #fbff00;
+  color: #232323;
+  border: 1px solid white;
 }
 .scroll-left p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);	
- transform:translateX(100%);
- /* Apply animation to this element */	
- -moz-animation: scroll-left 15s linear infinite;
- -webkit-animation: scroll-left 15s linear infinite;
- animation: scroll-left 30s linear infinite;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-left 15s linear infinite;
+  -webkit-animation: scroll-left 15s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
 }
 @-webkit-keyframes scroll-left {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
 }
 @keyframes scroll-left {
- 0%   { 
- -moz-transform: translateX(100%); /* Browser bug fix */
- -webkit-transform: translateX(100%); /* Browser bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Browser bug fix */
- -webkit-transform: translateX(-100%); /* Browser bug fix */
- transform: translateX(-100%); 
- }
+  0% {
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%);
+  }
 }
 
-@media (max-width : 500px) {
+@media (max-width: 500px) {
   .scroll-left p {
     position: absolute;
     width: 100%;
@@ -65,91 +73,89 @@ body {
     line-height: 50px;
     text-align: center;
     /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);	
-    transform:translateX(100%);
-    /* Apply animation to this element */	
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
     -moz-animation: scroll-left 15s linear infinite;
     -webkit-animation: scroll-left 15s linear infinite;
     animation: scroll-left 15s linear infinite;
-   }
+  }
 }
 
 /* news line */
 
-
-
-
 /* accordion */
 .accordion {
-    background-color: #232323;
-    /* color: #fbff00; */
-    color: #fbff00;
-    cursor: pointer;
-    padding: 18px;
-    width: 60%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 1.5rem;
-    transition: 0.4s;
-    font-family: 'Bebas Neue', cursive;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #fbff00;
-    color: #232323;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: #232323;
-    color: white;
-    /* font-family: 'Antonio', sans-serif;
+  background-color: #232323;
+  /* color: #fbff00; */
+  color: #fbff00;
+  cursor: pointer;
+  padding: 18px;
+  width: 60%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1.5rem;
+  transition: 0.4s;
+  font-family: "Bebas Neue", cursive;
+}
+
+.active,
+.accordion:hover {
+  background-color: #fbff00;
+  color: #232323;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #232323;
+  color: white;
+  /* font-family: 'Antonio', sans-serif;
     font-weight: 200; */
-    /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Patrick Hand', cursive;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    font-size: 1.2rem;
-  }
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Patrick Hand", cursive;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 1.2rem;
+}
 /* accordion ends */
 
 #eventsList::marker {
-    color: #fbff00;
-    content: ">";
+  color: #fbff00;
+  content: ">";
 }
 
 #emailContact {
-    color: white;
+  color: white;
 }
 
 /* contact form */
 #name {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
 }
 #emailinsta {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
 }
 #message {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
 }
 #submitButton {
-    background-color: #fbff00;
-    border: none;
-    color: #232323;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
+  background-color: #fbff00;
+  border: none;
+  color: #232323;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 /* contact form ends */
 
@@ -164,8 +170,8 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -176,22 +182,34 @@ body {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */
@@ -213,14 +231,14 @@ body {
   padding: 2px 16px;
   background-color: #fbff00;
   color: black;
-
 }
 
-.modal-body {padding: 2px 16px;
+.modal-body {
+  padding: 2px 16px;
   /* font-family: 'Antonio', sans-serif;
   font-weight: 100; */
-  font-family: 'Patrick Hand', cursive;
-  }
+  font-family: "Patrick Hand", cursive;
+}
 
 /* .modal-footer {
   padding: 2px 16px;
@@ -237,14 +255,14 @@ body {
   display: inline-block;
   font-size: 0.9rem;
   margin: 4px 2px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   border: white 1px solid;
 }
 
 /* modal ends */
 
-@media (max-width : 500px) {
+@media (max-width: 500px) {
   .events {
     width: 90%;
   }
@@ -252,21 +270,19 @@ body {
 
 #leftName {
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   float: left;
   padding-left: 5%;
   padding-top: 5%;
   font-size: 3rem;
-
 }
 #rightName {
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   float: right;
   padding-right: 5%;
   padding-top: 5%;
   font-size: 3rem;
-
 }
 
 /* footer */
@@ -275,7 +291,7 @@ body {
 }
 #copyright {
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 #footer {
   /* position: fixed; */
@@ -284,4 +300,9 @@ body {
   bottom: 0;
   background-color: #161616;
   text-align: center;
+}
+
+.old {
+  color: white;
+  text-decoration: underline;
 }
